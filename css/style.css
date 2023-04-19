@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+:root {
+
+  --bckgrdColor: #1a202c;
+
+  --accentColor: lightgray;
+
+  --scrollBar: red;
+
+  --font: 'Karla', sans-serif;
+
+}
+
+* {
+
+    padding: 0;
+
+    margin: 0;
+
+    box-sizing: border-box;
+
+}
+
+body {
+
+    background-color: #101010;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.dark {
+
+  background-color: var(--bckgrdColor);
+
+  color: var(--accentColor);
+
+  transition: background 0.1s ease;
+
+}
+
+.dark .link {
+
+  color: var(--accentColor);
+
+  border: solid var(--accentColor) 2px;
+
+}
+
+#links {
+
+  max-width: 675px;
+
+  width: auto;
+
+  display: block;
+
+  margin: 27px auto;
+
+}
+
+.menu {
+
+  position: relative;
+
+  background-color: transparent;
+
+  border: solid var(--bckgrdColor) 2px;
+
+  border-radius: 10px;
+
+  font-size: 1rem;
+
+  text-align: center;
+
+  display: block;
+
+  margin-left: 10px;
+
+  margin-right: 10px;
+
+  margin-bottom: 10px;
+
+  padding: 10px;
+
+  text-decoration: none;
+
+  transition: 0.2s ease;
+
+  color: var(--bckgrdColor);
+
+}
+
+.menu:hover {
+
+  box-shadow: 0 0 17px whitesmoke;
+
+  transition: 1s;
+
+}
+
+.dark #toggleBtn {
+
+  color: #ffffff;
+
+}
+
+@media (hover: hover) {
+
+  .menu:hover {
+
+    background-color: var(--bckgrdColor);
+
+    color: var(--accentColor);
+
+  }
+
+  .dark .link:hover {
+
+    background-color: var(--accentColor);
+
+    color: var(--bckgrdColor);
+
+  }
+
+}
+
+.menu:active {
+
+  background-color: var(--accentColor);
+
+  color: black;
+
+}
+
+.logo {
+
+  justify-content: center;
+
+  align-items: center;
+
+  text-align: center;
+
+}
+
+.logo img {
+
+    justify-content: center;
+
+    align-items: center;
+
+    width: 150px;
+
+    height: 150px;
+
+    border-radius: 100%;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border: 3px solid var(--bckgrdColor);
+
+    box-shadow: 0 0 30px rgb(92, 92, 92);
+
+    cursor: url('https://img.icons8.com/color/48/null/minecraft-shovel.png');
+
+    margin: 20px;
+
+}
+
+.logo p {
+
+  text-align: center;
+
+    color: white;
+
+    margin: 12px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
